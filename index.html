@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agency</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div>
+      <a href="./index.html"
+        ><img class="logo" src="./assets/images/logo.png" alt="logo"
+      /></a>
+      <style>
+        .logo {
+          display: block;
+          height: 20px;
+        }
+      </style>
+    </div>
+    <div class="heading">
+      <h2>The Best <span id="creative">Creative </span>Design Agency</h2>
+    </div>
+    <div>
+      <button class="button">
+        Book a call
+        <style>
+          .button {
+            display: inline-block;
+            align-items: center;
+            width: 200px;
+            height: 50px;
+            margin: auto;
+            display: flex;
+            display: grid;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            background-color: rgb(73, 149, 211);
+            color: white;
+            border: none;
+            font-size: 18px;
+          }
+        </style>
+      </button>
+    </div>
+    <div class="content">
+      <div class="card one">
+        <img class="content-image" src="./assets/images/beautiful.jpg" />
+      </div>
+      <div class="card two">
+        We create beautiful websites for you. Book a call to get in touch, or
+        send us an email at contact@someagency.com
+      </div>
+      <div class="card three">
+        <img class="content-image" src="./assets/images/construction.jpg" />
+      </div>
+      <div class="card four">
+        Constructed especially to the needs of your business. Designed by the
+        best developers to be smooth, responsive, and secure.
+      </div>
+      <style>
+        .content {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 200px;
+          margin-top: 50px;
+        }
+
+        .heading {
+          grid-column: span 2;
+          text-align: center;
+          display: block;
+          font-size: 30px;
+        }
+
+        #creative {
+          color: rgb(73, 149, 211);
+        }
+
+        .card {
+          display: inline-block;
+        }
+
+        .content-image {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 15px;
+        }
+
+        .two,
+        .four {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        @media (max-width: 800px) {
+          .content {
+            display: block;
+          }
+
+          .two,
+          .four {
+            padding: 10px;
+          }
+        }
+
+        @media (max-width: 1300px) and (min-width: 600px) {
+          .one,
+          .two {
+            display: block;
+          }
+        }
+      </style>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <p>Create. Develop. Design.</p>
+        <style>
+          .footer {
+            clear: both;
+            display: block;
+            margin-top: 50px;
+          }
+        </style>
+      </div>
+    </footer>
+  </body>
+</html>
